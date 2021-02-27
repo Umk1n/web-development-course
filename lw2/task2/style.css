@@ -1,0 +1,99 @@
+html,body {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  border: solid 3px #777777;
+  border-radius: 0px;
+  padding: 0.5em 1em;
+  color: #777777;
+  background-color: white;
+}
+.button:hover {
+  cursor: pointer;
+}
+/*Размер*/
+.button-x-large {
+  font-size: 1.8em;
+}
+.button-large {
+  font-size: 1.4em;
+}
+.button-medium {
+  font-size: 1em;
+}
+.button-small {
+  font-size: 0.9em;
+}
+.button-x-small {
+  font-size: 0.7em;
+}
+/*Закругления*/
+.button-rounded {
+  border-radius: 0.4em;
+}
+.button-x-rounded {
+  border-radius: 1em;
+}
+/*Цвета*/
+.button-primary {
+  color: #9477a7;
+  background-color: white;
+  border: solid 3px #9477a7;
+}
+.button-success {
+  color: #87c057;
+  background-color: white;
+  border: solid 3px #87c057;
+}
+.button-info {
+  color: #4da6e2;
+  background-color: white;
+  border: solid 3px #4da6e2;
+}
+.button-warning {
+  color: #fbcf64;
+  background-color: white;
+  border: solid 3px #fbcf64;
+}
+.button-red {
+  color: #ec7162;
+  background-color: white;
+  border: solid 3px #ec7162;
+}
+/*Заливка*/
+.button-filled{
+  color: white;
+  background-color: #777777;
+}
+.button-filled-primary{
+  color: white;
+  background-color: #9477a7;
+  border: solid 3px #9477a7;
+}
+.button-filled-success{
+  color: white;
+  background-color: #87c057;
+  border: solid 3px #87c057;
+}
+.button-filled-info{
+  color: white;
+  background-color: #4da6e2;
+  border: solid 3px #4da6e2;
+}
+.button-filled-warning{
+  color: white;
+  background-color: #fbcf64;
+  border: solid 3px #fbcf64;
+}
+.button-filled-red{
+  color: white;
+  background-color: #ec7162;
+  border: solid 3px #ec7162;
+}
