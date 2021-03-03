@@ -76,7 +76,7 @@ body {
   width: 388px;
   margin-top: 12px;
 }
-button {
+.button {
   margin-top: 16px;
   width: 144px;
   background: #EC6041;
