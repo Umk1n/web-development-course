@@ -22,7 +22,7 @@ body {
   color: #121212;
   display: flex;
 }
-.header h1 .underline {
+.header-title .underline {
   padding: 0px 16px;
   margin: 0px 16px;
   background: linear-gradient(180deg, rgba(237, 96, 65, 0) 85.76%, #ED6041 85.82%);
