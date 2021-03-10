@@ -1,11 +1,14 @@
 body {
+  margin: 0;
+  padding: 0;
+}
+.container {
   margin: 80px auto;
   height: 100% !important;
   width: 1440px;
   display: flex;
   flex-direction: column;
   position: relative;
-  background: #FFFFFF;
   font-family: "Josefin Sans";
 }
 .header {
@@ -61,7 +64,7 @@ body {
   flex-direction: column;
   padding: 0px 0px 0px 24px;
 }
-.text-content h2 {
+.title-content {
   width: 388px;
   height: 40px;
   font-size: 35px;
@@ -69,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   margin: 4px 0px;
+  font-weight: bold;
 }
 .text {
   line-height: 24px;
