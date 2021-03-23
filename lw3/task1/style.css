@@ -35,7 +35,7 @@ table {
 .table-content {
   width: 85%;
 }
-.title-decript {
+.title-decription {
   text-align: center;
 }
 .product-img {
@@ -56,21 +56,21 @@ table {
 .price {
   text-align: center;
 }
-.quan {
+.quantity-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.quan-number {
+.quantity-number {
   border-width: 5px;
   padding: 1rem 1.25rem;
   border: 2px solid #f5f5f5;
 }
-.quan-minus {
+.quantity-minus {
   padding: 1rem 1.4rem;
   border: 2px solid #f5f5f5;
 }
-.quan-plus {
+.quantity-plus {
   background: #001645;
   padding: 1rem 1.4rem;
   border: 2px solid #f5f5f5;
@@ -97,7 +97,7 @@ table {
   width: 100%;
   max-width: 1280px;
 }
-.title-decript {
+.title-decription {
   text-align: center;
   padding: 0px 2.5em;
   color: #313131;
@@ -107,7 +107,7 @@ table {
 .btn-footer {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 87%;
 }
 .main-but-footer {
@@ -169,11 +169,11 @@ table {
   margin-left: 20px;
   font-size: 14px;
 }
-.check {
+.checkout {
   width: 25%;
   margin-left: 20px;
 }
-.btn-check {
+.btn-checkout {
   width: 70%;
   background-color: #001645;
   border: none;
@@ -181,17 +181,17 @@ table {
   color: #ffffff;
   text-align: left;
 }
-.check-img {
+.checkout-img {
   width: 25%;
   background-color: #001548;
   margin-left: 2px;
   padding: 1.1rem;
   border: none;
 }
-.korzina {
+.basket {
   width: 13px;
 }
-.btn-check-text {
+.btn-checkout-text {
   margin-left: 20px;
   font-size: 14px;
 }
@@ -200,7 +200,7 @@ table {
   flex-direction: column;
   align-items: flex-end;
   margin: 30px 0px;
-  width:85%;
+  width: 85%;
 }
 .btn-continue {
   width: 25%;
