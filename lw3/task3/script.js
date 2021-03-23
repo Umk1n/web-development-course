@@ -39,7 +39,7 @@ var Player = {
     this.status = 'play';
   },
   showTracks: function() {
-    Musicthis = this.trackList.map(song => {
+    this.trackList.map(song => {
       if (song === this.currentTrack) {
         console.log(song + ' - Играет сейчас')
       }
