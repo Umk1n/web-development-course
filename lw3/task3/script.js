@@ -19,14 +19,14 @@ var Player = {
     console.log('Pause');
   },
   next: function() {
-    if(this.currentIndex +1 >= this.trackList.length) {
+    if (this.currentIndex +1 >= this.trackList.length) {
       this.currentIndex = 0;
     }
     else {
       this.currentIndex += 1;
     }
     this.currentTrack = this.trackList[this.currentIndex];
-    this.status = 'play';
+    this.play();
   },
   prev: function() {
     if (this.currentIndex  <= 0) {
@@ -36,15 +36,15 @@ var Player = {
       this.currentIndex -= 1;
     }
     this.currentTrack = this.trackList[this.currentIndex];
-    this.status = 'play';
+    this.play();
   },
   showTracks: function() {
-    this.trackList.map(song => {
+    this.trackList.map((song, i) => {
       if (song === this.currentTrack) {
-        console.log(song + ' - Играет сейчас')
+        console.log(i+1 +"." + song + ' - Играет сейчас')
       }
       else {
-        console.log(song)
+        console.log(i+1 +"." + song)
       }
     })
   }
