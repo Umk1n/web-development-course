@@ -11,8 +11,8 @@
     .header-profile_arrow
   .nav-block
     .nav-block-section
-    .nav-block-section_icon
-    .nav-block-section_name
+      .nav-block-section_icon
+      .nav-block-section_name
   .page-info
     .page-info-account
       .page-info-account_avatar
