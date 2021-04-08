@@ -1,3 +1,4 @@
+```
 .container
   .header
     .header_logo
@@ -51,3 +52,4 @@
           .page-info-bills-article-bill-prod_identifier-red
           .page-info-bills-article-bill-prod_text
           .page-info-bills-article-bill-prod_btn-not
+```
