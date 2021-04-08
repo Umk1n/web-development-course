@@ -7,7 +7,7 @@ var cashbox = {
         return;
     }
     this.amount += payment.amount;
-    this.operationHistory.push({...payment, createdAt: new Date()})
+    this.operationHistory.push({...payment, type: 'Платеж', createdAt: new Date()})
   },
   refundPayment: function(refund) {
   if (refund.amount <= 0 || refund.amount > this.amount) {
@@ -15,11 +15,11 @@ var cashbox = {
       return;
   }
   this.amount -= refund.amount;
-  this.operationHistory.push({...refund, createdAt: new Date()})
+  this.operationHistory.push({...refund, type: 'Возврат', createdAt: new Date()})
   },
   showHistory: function() {
     this.operationHistory.forEach((value, index) => {
-      console.log(`${index + 1}. ${value.createdAt.toLocaleDateString()} ${value.createdAt.getHours()}:${value.createdAt.getMinutes()} Платеж: ${value.amount} руб Операция: ${value.info}`);
+      console.log(`${index + 1}. ${value.createdAt.toLocaleDateString()} ${value.createdAt.getHours()}:${value.createdAt.getMinutes()} ${value.type}: ${value.amount} руб Операция: ${value.info}`);
     })
   },
 };
