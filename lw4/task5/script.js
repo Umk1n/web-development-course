@@ -1,4 +1,4 @@
-var cashbox = {
+var Cashbox = {
   amount: 0,
   operationHistory: [],
   addPayment: function(payment) {

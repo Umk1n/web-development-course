@@ -1,9 +1,6 @@
-String.prototype.countCoincidence = function(arg) {
-  if (typeof arg !== 'string') {
+String.prototype.countCoincidence = function(str) {
+  if (typeof str !== 'string' || !str) {
     return 0;
   }
-  if (!arg) {
-    return 0;
-  }
-  return this.toLowerCase().split(arg.toLowerCase()).length - 1;
+  return this.toLowerCase().split(str.toLowerCase()).length - 1;
 }
