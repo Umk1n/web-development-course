@@ -1,20 +1,20 @@
 window.onload = function () {
   var listingElements = ['apple', 'orange'];
-	var storeElements = [];
-	function addToStoreElements(element) {
-  	var elementPosition = listingElements.indexOf(element);
-	  if (elementPosition > -1) {
-  	  storeElements.push(element);
-    	listingElements.splice(elementPosition, 1);
-	  }
-	}
+  var storeElements = [];
+  function addToStoreElements(element) {
+    var elementPosition = listingElements.indexOf(element);
+    if (elementPosition > -1) {
+      storeElements.push(element);
+      listingElements.splice(elementPosition, 1);
+    }
+  }
   function addToListingElements(element) {
-  	var elementPosition = storeElements.indexOf(element);
-	  if (elementPosition > -1) {
-  	  listingElements.push(element);
-    	storeElements.splice(elementPosition, 1);
-	  }
-	}
+    var elementPosition = storeElements.indexOf(element);
+    if (elementPosition > -1) {
+      listingElements.push(element);
+      storeElements.splice(elementPosition, 1);
+    }
+  }
   function addNewElementListing(nameElement) {
     listingElements.push(nameElement);
   }
@@ -34,11 +34,11 @@ window.onload = function () {
     store.innerHTML = storeElements.length;
     listing.innerHTML = listingElements.length;
   }
-	function updateUI() {
-	 	var storeSelect = document.querySelector('.store-select');
+  function updateUI() {
+    var storeSelect = document.querySelector('.store-select');
     var listingSelect = document.querySelector('.listing-select');
-		storeSelect.innerHTML = '';
-		listingSelect.innerHTML = '';
+    storeSelect.innerHTML = '';
+    listingSelect.innerHTML = '';
     for (var i = 0; i < listingElements.length; i++) {
       var newOption = document.createElement('option');
       newOption.innerText = listingElements[i];
@@ -50,19 +50,19 @@ window.onload = function () {
       storeSelect.append(newOption);
     }
     updateCount();
-	}
-	var addButtonStore = document.querySelector('#add-button-store');
+  }
+  var addButtonStore = document.querySelector('#add-button-store');
   addButtonStore.onclick = function () {
     var selectedOptionStore = document.querySelector('.listing-select option:checked');
     addToStoreElements(selectedOptionStore.innerText);
     updateUI();
-	}
+  }
   var addButtonListing = document.querySelector('#add-button-listing');
   addButtonListing.onclick = function () {
     var selectedOptionListing = document.querySelector('.store-select option:checked');
     addToListingElements(selectedOptionListing.innerText);
     updateUI();
-	}
+  }
   var addButtonNewElementListing = document.querySelector('#add-button-new-element')
   addButtonNewElementListing.onclick = function () {
     const nameElement = prompt('Новый элемент');
