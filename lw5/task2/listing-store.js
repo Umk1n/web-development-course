@@ -15,8 +15,7 @@ window.onload = function () {
     	storeElements.splice(elementPosition, 1);
 	  }
 	}
-  function addNewElementListing() {
-    const nameElement = prompt('Новый элемент');
+  function addNewElementListing(nameElement) {
     listingElements.push(nameElement);
   }
    function deleteElements(element) {
@@ -66,7 +65,8 @@ window.onload = function () {
 	}
   var addButtonNewElementListing = document.querySelector('#add-button-new-element')
   addButtonNewElementListing.onclick = function () {
-    addNewElementListing();
+    const nameElement = prompt('Новый элемент');
+    addNewElementListing(nameElement);
     updateUI();
   }
   var deleteButtonElement = document.querySelector('#delete-button-element');
