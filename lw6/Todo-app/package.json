@@ -4,9 +4,18 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
+    "test": "jest",
     "build": "webpack --config webpack.config.js"
   },
-  "dependencies": {},
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "jest-environment-jsdom-sixteen",
+    "transform": {}
+  },
+  
+  "dependencies": {
+    "jest": "^27.0.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.14.4",

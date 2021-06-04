@@ -1,0 +1,28 @@
+require('./todo-app.css');
+var _todoState = require("./todo-state");
+var _todoUpdate = require("./todo-update");
+// событие добавление новой задачи в TODO
+const addTodoButton = document.querySelector(".todo-form__button");
+addTodoButton.onclick = function () {
+  const newTodoText = document.querySelector(".todo-form__input").value;
+  const todoId = _todoState.todos.length + 1;
+  // добавляем новый элемент в состояние
+  _todoState.addTodo({
+    id: todoId,
+    text: newTodoText,
+    completed: false
+  });
+  // обновляем UI с новым состоянием todos
+  _todoUpdate.updateTodoList(_todoState.todos);
+  registerTodoItemEvent(todoId);
+};
+// регистрация событий для чекбоксов
+function registerTodoItemEvent(todoId) {
+  const todoItemCheckbox = document.querySelector(`.todo-list-item input[name="todo-${todoId}"]`);
+  todoItemCheckbox.onclick = function () {
+    // связываем чекбокс и логику изменения данных состояния
+    _todoState.toggleCompleteTodo(todoId, todoItemCheckbox.checked);
+    // вызываем обновление количества выполненных задач
+    _todoUpdate.updateTodoStatCompleted(_todoState.todos);
+  };
+}

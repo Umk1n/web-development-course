@@ -4,7 +4,7 @@
   "description": "",
   "main": "listing-store.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "minify-js": "uglifyjs listing-store.js -o build/listing-store.js",
     "minify-css": "uglifycss listing-store.css --output build/listing-store.css",
     "copy-html": "copyfiles index.html build",
@@ -20,6 +20,7 @@
     "uglifyjs": "^2.4.11"
   },
   "dependencies": {
+    "jest": "^27.0.4",
     "npm-run-all": "^4.1.5"
   }
 }
